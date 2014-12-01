@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.navigationController setNavigationBarHidden:YES];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"dashboard_bg.png"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +27,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
 @end
